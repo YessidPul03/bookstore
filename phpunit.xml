@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="API Tests">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <server name="DB_HOST" value="127.0.0.1"/>
+        <server name="DB_PORT" value="3306"/>
+        <server name="DB_USER" value="root"/>
+        <server name="DB_PASS" value=""/>
+        <server name="DB_NAME" value="libreria"/>
+        <server name="DB_SOCKET" value="/var/run/mysqld/mysqld.sock"/>
+    </php>
+</phpunit>

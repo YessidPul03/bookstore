@@ -1,0 +1,15 @@
+{
+    "name": "yeyo/bookstore",
+    "description": "API para gestionar un catalogo de libros",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yessid Pulgarin",
+            "email": "yessid061@gmail.com"
+        }
+    ],
+    "require": {}
+}

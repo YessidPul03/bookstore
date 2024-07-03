@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "3a2ba1dd-bf4d-438b-9baf-f4bc20fccd5d",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23653586"
+	},
+	"item": [
+		{
+			"name": "getBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/vsc_yeyowork/bookstore/api/obtener.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vsc_yeyowork",
+						"bookstore",
+						"api",
+						"obtener.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/vsc_yeyowork/bookstore/api/obtener_por_id.php?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vsc_yeyowork",
+						"bookstore",
+						"api",
+						"obtener_por_id.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Nuevo Libro\",\r\n    \"autor\": \"Autor Desconocido\",\r\n    \"ano_publicacion\": 20220,\r\n    \"genero\": \"Ficcion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/vsc_yeyowork/bookstore/api/agregar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vsc_yeyowork",
+						"bookstore",
+						"api",
+						"agregar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"titulo\": \"Editado\",\r\n    \"autor\": \"Yessid Pulgarin\",\r\n    \"ano_publicacion\": 2024,\r\n    \"genero\": \"Amateur\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/vsc_yeyowork/bookstore/api/editar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vsc_yeyowork",
+						"bookstore",
+						"api",
+						"editar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/vsc_yeyowork/bookstore/api/eliminar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vsc_yeyowork",
+						"bookstore",
+						"api",
+						"eliminar.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
